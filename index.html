@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salón Elegante - Inicio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  </head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Salón Elegante</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li> 
+      <li><a href="#servicios">Servicios</a></li> 
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    
+    <header id="inicio" class="hero">
+      <div>
+        <h1>El Lugar Ideal Para Tu Evento</h1>
+        <p>Casamientos, cumpleaños, eventos corporativos y más.</p>
+        <a href="#formulario" class="btn">Reservar Ahora</a>
+      </div>
+    </header>
+
+    
+    <section id="servicios" class="section">
+      <h2 class="title">Nuestros Servicios</h2>
+
+      <div class="carousel">
+        <button class="carousel-btn prev">‹</button>
+
+        <div class="carousel-track">
+          </div>
+        
+        <button class="carousel-btn next">›</button>
+      </div>
+      <div class="carousel-dots"></div> 
+    </section>
+
+    
+    <section id="propuesta-valor" class="propuesta-valor">
+        <div class="container-texto">
+            <h3>✨ Más Que un Salón, Creamos Recuerdos Inolvidables</h3>
+            <p>En <strong>Salón Elegante</strong>, entendemos que tu evento no es solo una fecha; es una declaración de estilo y un momento cumbre en tu vida. Nuestro equipo de organizadores expertos y chefs de alta cocina se encarga de cada detalle, desde la <strong>decoración personalizada</strong> hasta la gestión de invitados. Nos dedicamos a la logística impecable para que tú solo te concentres en ser el anfitrión perfecto.</p>
+            <p>¿Cansado del estrés de la planificación? Nuestro proceso de reserva es simple y transparente. Dinos qué sueñas, y nosotros lo hacemos realidad. **Reserva tu fecha ahora** a través del formulario, y déjanos empezar a construir el evento elegante y memorable que siempre quisiste.</p>
+        </div>
+    </section>
+    
+    
+    <section id="formulario" class="section">
+      <h2 class="title">Reservar Visita</h2>
+      <form id="form-reserva">
+        <input type="text" id="nombre" placeholder="Nombre y Apellido" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="tel" id="telefono" placeholder="Teléfono" required />
+        <select id="evento" required>
+          <option value="">Tipo de Evento</option>
+          <option value="Cumpleaños">Cumpleaños</option>
+          <option value="Casamiento">Casamientos</option> 
+          <option value="Fiestas de 15">Fiestas de 15</option>
+          <option value="Eventos Corporativos">Eventos Corporativos</option> 
+          <option value="Otros">Otros</option>
+        </select>
+        <input type="date" id="fecha" required />
+        <textarea id="mensaje" rows="4" placeholder="Mensaje adicional"></textarea>
+        <button class="btn">Enviar Reserva</button>
+      </form>
+      <p id="resultado"></p>
+    </section>
+
+  </main>
+  
+  <footer>
+    <p>© 2025 Salón Elegante - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
