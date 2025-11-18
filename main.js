@@ -24,7 +24,7 @@ const datosServicios = [
     { 
         titulo: "Cumpleaños", 
         descripcion: "Ambiente ideal para festejar con amigos y familia.", 
-        imagen: "images/cumpleaños.jpg",
+        imagen: "images/cumple.jpg",
         enlace_texto: "Reservar",
         value_select: "Cumpleaños"
     },
